@@ -1,11 +1,11 @@
-## Japanese Verbs
+## Flashcard App
 
 📝 `NOTE:` Paste the README templates for each subsequent lab here at the top, (i.e. lab 2, 3, 4). This will show a history of your development process including which users stories you completed and how your app looked and functioned at each step.
 
 ## Lab 1
 
 ### App Description
-Want to learn the top 100 most commonly used verbs in Japanese? This app will help you learn and memorize the top 100 commonly used verbs in Japanese through spaced repetition.
+Want to learn the top 100 most commonly used verbs in Japanese or remember those important details from your history class? This app will help you create flashcards for any subject and help learn through spaced repetition.
 
 ### App Walk-though
 Select the answer from the three choices.
