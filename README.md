@@ -1,27 +1,25 @@
-## NAME_OF_YOUR_APP_HERE
+## Japanese Verbs
 
 📝 `NOTE:` Paste the README templates for each subsequent lab here at the top, (i.e. lab 2, 3, 4). This will show a history of your development process including which users stories you completed and how your app looked and functioned at each step.
 
 ## Lab 1
 
 ### App Description
-`TODO://` Add app description
+Want to learn the top 100 most commonly used verbs in Japanese? This app will help you learn and memorize the top 100 commonly used verbs in Japanese through spaced repetition.
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
+Select the answer from the three choices.
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
-
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
+<img src="http://g.recordit.co/EUg350IhLX.gif" width=200><br>
 
 ## Required
-- [ ] Create New Project in Xcode
-- [ ] Add a view for the front side of the flashcard to display the question
-- [ ] Add a view for the back side of the flashcard to display the answer
-- [ ] Build in logic to show the answer side when the card is tapped
-- [ ] Push code to GitHub
+- [x] Create New Project in Xcode
+- [x] Add a view for the front side of the flashcard to display the question
+- [x] Add a view for the back side of the flashcard to display the answer
+- [x] Build in logic to show the answer side when the card is tapped
+- [x] Push code to GitHub
 ## Optional
-- [ ] Toggle the flashcard between the question side and the answer side
-- [ ] Style the question and answer side of the card to better distinguish between the two sides
-- [ ] Add selectable multiple choice answers beneath the card
+- [x] Toggle the flashcard between the question side and the answer side
+- [x] Style the question and answer side of the card to better distinguish between the two sides
+- [x] Add selectable multiple choice answers beneath the card
 

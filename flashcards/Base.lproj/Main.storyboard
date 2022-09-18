@@ -20,28 +20,71 @@
                                 <rect key="frame" x="50" y="167" width="290" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bjarne Stroustrup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hu-jv-44o">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to eat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hu-jv-44o">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="203"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who is the creator of C++?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRw-op-gBC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="食べる" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRw-op-gBC">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="203"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.74038849240000004" blue="0.3103354774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="tintColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNd-62-Qob">
+                                <rect key="frame" x="50" y="477" width="290" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="to run">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="PT0-pY-TVa" appends="YES" id="wRu-eF-acE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFj-jG-q72">
+                                <rect key="frame" x="50" y="665" width="290" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="to sleep">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="LU4-LE-jKw" appends="YES" id="Xiq-nc-AUW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ok4-m4-T2p">
+                                <rect key="frame" x="50" y="572" width="290" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="to eat">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eV3-7v-5o9" appends="YES" id="yAa-qb-OVW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="JVd-nA-DdP" appends="YES" id="B7h-QY-WLy"/>
@@ -49,6 +92,9 @@
                     </view>
                     <connections>
                         <outlet property="backLabel" destination="3hu-jv-44o" id="Niv-MR-ynq"/>
+                        <outlet property="btnOptionOne" destination="MNd-62-Qob" id="kBh-DP-Hxv"/>
+                        <outlet property="btnOptionThree" destination="SFj-jG-q72" id="cKS-ZR-3wa"/>
+                        <outlet property="btnOptionTwo" destination="ok4-m4-T2p" id="nr6-wF-hAY"/>
                         <outlet property="card" destination="ynG-cK-o0O" id="gdT-Zu-t2S"/>
                         <outlet property="frontLabel" destination="FRw-op-gBC" id="7HO-UI-8th"/>
                     </connections>
@@ -57,6 +103,21 @@
                 <tapGestureRecognizer id="JVd-nA-DdP">
                     <connections>
                         <action selector="tapOnFlashcard:" destination="BYZ-38-t0r" id="80b-w6-W7h"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="PT0-pY-TVa">
+                    <connections>
+                        <action selector="didTapOptionOne:" destination="BYZ-38-t0r" id="o8z-gs-mbo"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="eV3-7v-5o9">
+                    <connections>
+                        <action selector="didTapOptionTwo:" destination="BYZ-38-t0r" id="4MM-vE-Jas"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="LU4-LE-jKw">
+                    <connections>
+                        <action selector="didTapOptionThree:" destination="BYZ-38-t0r" id="80u-bm-ZvR"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -70,11 +131,8 @@
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
