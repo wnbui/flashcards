@@ -1,8 +1,5 @@
 <<<<<<< HEAD
 ## Flashcards
-=======
-## Flashcard App
->>>>>>> 7141328f1e82a93415876564722f501393c0a3c8
 
 ## Lab 2
 
@@ -29,11 +26,8 @@ Hit ✏️ to edit the exist card.
 ## Lab 1
 
 ### App Description
-<<<<<<< HEAD
+
 Create flashcards with single flip answers or multiple choice answers (between three choices) to help you study.
-=======
-Want to learn the top 100 most commonly used verbs in Japanese or remember those important details from your history class? This app will help you create flashcards for any subject and help learn through spaced repetition.
->>>>>>> 7141328f1e82a93415876564722f501393c0a3c8
 
 ### App Walk-though
 Select the answer from the three choices.
