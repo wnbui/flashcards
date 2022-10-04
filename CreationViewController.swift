@@ -57,10 +57,10 @@ class CreationViewController: UIViewController {
         {
             // Call the function to update the flashcard
             flashcardsController.unpdateFlashcard(question: questionText!, answer: answerText!, extraAnswerOne: extraAnswerOneText!, extraAnswerTwo: extraAnswerTwoText!, extraAnswerThree: extraAnswerThreeText!)
-        }
         
-        // Dismissa
-        dismiss(animated: true)
+            // Dismissa
+            dismiss(animated: true)
+        }
     }
     
     /*
