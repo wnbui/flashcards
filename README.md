@@ -11,7 +11,7 @@ Create new flashcards by hitting the + button. Make sure to fill out at minimum 
 Fill in the additional multiple choice questions. Hit done to complete or cancel to cancel.
 Hit ✏️ to edit the exist card.
 
-<img src="http://g.recordit.co/cGHeyMO0LR.gif" width=200><br>
+<img src="http://g.recordit.co/gYrLYIIDu8.gif" width=200><br>
 
 ## Required
 - [x] User can open the creation screen
