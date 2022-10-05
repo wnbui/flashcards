@@ -81,7 +81,6 @@
 		39AF3A2928D16DE100434056 = {
 			isa = PBXGroup;
 			children = (
-				391141FF28E3E26900177AFB /* CreationViewController.swift */,
 				39AF3A3428D16DE100434056 /* flashcards */,
 				39AF3A4B28D16DE200434056 /* flashcardsTests */,
 				39AF3A5528D16DE200434056 /* flashcardsUITests */,
@@ -102,6 +101,7 @@
 		39AF3A3428D16DE100434056 /* flashcards */ = {
 			isa = PBXGroup;
 			children = (
+				391141FF28E3E26900177AFB /* CreationViewController.swift */,
 				39AF3A3528D16DE100434056 /* AppDelegate.swift */,
 				39AF3A3728D16DE100434056 /* SceneDelegate.swift */,
 				39AF3A3928D16DE100434056 /* ViewController.swift */,

@@ -56,7 +56,7 @@ class CreationViewController: UIViewController {
         else
         {
             // Call the function to update the flashcard
-            flashcardsController.unpdateFlashcard(question: questionText!, answer: answerText!, extraAnswerOne: extraAnswerOneText!, extraAnswerTwo: extraAnswerTwoText!, extraAnswerThree: extraAnswerThreeText!)
+            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!, extraAnswerOne: extraAnswerOneText!, extraAnswerTwo: extraAnswerTwoText!, extraAnswerThree: extraAnswerThreeText!)
         
             // Dismissa
             dismiss(animated: true)
