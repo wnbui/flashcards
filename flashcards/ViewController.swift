@@ -11,6 +11,9 @@ import UIKit
 struct Flashcard {
     var question: String
     var answer: String
+    var extraAnswerOne: String
+    var extraAnswerTwo: String
+    var extraAnswerThree: String
 }
 
 class ViewController: UIViewController {
@@ -22,13 +25,13 @@ class ViewController: UIViewController {
     var currentIndex = 0
     
     func updateFlashcard(question: String, answer: String, extraAnswerOne: String, extraAnswerTwo: String, extraAnswerThree: String) {
-        let flashcard = Flashcard(question: question, answer: answer)
+        let flashcard = Flashcard(question: question, answer: answer, extraAnswerOne: extraAnswerOne, extraAnswerTwo: extraAnswerTwo, extraAnswerThree: extraAnswerThree)
         frontLabel.text = flashcard.question
         backLabel.text = flashcard.answer
         
-        btnOptionOne.setTitle(extraAnswerOne, for: .normal)
-        btnOptionTwo.setTitle(extraAnswerTwo, for: .normal)
-        btnOptionThree.setTitle(extraAnswerThree, for: .normal)
+        btnOptionOne.setTitle(flashcard.extraAnswerOne, for: .normal)
+        btnOptionTwo.setTitle(flashcard.extraAnswerTwo, for: .normal)
+        btnOptionThree.setTitle(flashcard.extraAnswerThree, for: .normal)
         
         // Adding new flashcards
         flashcards.append(flashcard)
@@ -80,7 +83,7 @@ class ViewController: UIViewController {
     func saveAllFlashcardsToDisk() {
         // From flashcard array to dictionary array
         let dictionaryArray = flashcards.map { (card) -> [String: String] in
-            return ["question": card.question, "answer": card.answer]
+            return ["question": card.question, "answer": card.answer, "extraAnswerOne": card.extraAnswerOne, "extraAnswerTwo": card.extraAnswerTwo, "extraAnswerThree": card.extraAnswerThree]
         }
         // Save array on disk using UserDefaults
         UserDefaults.standard.set(dictionaryArray, forKey: "flashcards")
@@ -94,7 +97,7 @@ class ViewController: UIViewController {
         if let dictionaryArray = UserDefaults.standard.array(forKey: "flashcards") as? [[String: String]] {
             // In here we know for sure we hae a dictionary array
             let savedCards = dictionaryArray.map { dictionary -> Flashcard in
-                return Flashcard(question: dictionary["question"]!, answer: dictionary["answer"]!)
+                return Flashcard(question: dictionary["question"]!, answer: dictionary["answer"]!, extraAnswerOne: dictionary["extraAnswerOne"]!, extraAnswerTwo: dictionary["extraAnswerTwo"]!, extraAnswerThree: dictionary["extraAnswerThree"]!)
             }
             // Put all these cards in our flashcards array
             flashcards.append(contentsOf: savedCards)
@@ -108,7 +111,7 @@ class ViewController: UIViewController {
         // Read saved flashcards
         readSavedFlashcards()
         
-        // Adding out initial flashcard if needed
+        // Adding our initial flashcard if needed
         if flashcards.count == 0 {
             updateFlashcard(question: "What is the question?", answer: "This is the answer", extraAnswerOne: "one", extraAnswerTwo: "two", extraAnswerThree: "three")
         }
