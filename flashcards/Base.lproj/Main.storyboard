@@ -98,16 +98,6 @@
                                     <segue destination="pSN-BO-7Mw" kind="presentation" id="sGG-Jy-jay"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk3-DB-08e">
-                                <rect key="frame" x="307" y="775" width="60" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
-                                <connections>
-                                    <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vN-XA-W29"/>
-                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="riP-2E-gng"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzE-MQ-md7">
                                 <rect key="frame" x="24" y="775" width="59" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -115,6 +105,15 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Prev"/>
                                 <connections>
                                     <action selector="didTapOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWT-Ns-Z00"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rc-X1-Vad">
+                                <rect key="frame" x="307" y="775" width="60" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BUn-FW-CKK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -133,7 +132,7 @@
                         <outlet property="btnOptionTwo" destination="ok4-m4-T2p" id="nr6-wF-hAY"/>
                         <outlet property="card" destination="ynG-cK-o0O" id="gdT-Zu-t2S"/>
                         <outlet property="frontLabel" destination="FRw-op-gBC" id="7HO-UI-8th"/>
-                        <outlet property="nextButton" destination="Hk3-DB-08e" id="IWJ-og-qpw"/>
+                        <outlet property="nextButton" destination="2Rc-X1-Vad" id="j7h-Ug-vbV"/>
                         <outlet property="prevButton" destination="pzE-MQ-md7" id="hHw-Ri-1yO"/>
                     </connections>
                 </viewController>
