@@ -29,9 +29,9 @@ class ViewController: UIViewController {
         frontLabel.text = flashcard.question
         backLabel.text = flashcard.answer
         
-        btnOptionOne.setTitle(extraAnswerOne, for: .normal)
-        btnOptionTwo.setTitle(extraAnswerTwo, for: .normal)
-        btnOptionThree.setTitle(extraAnswerThree, for: .normal)
+        btnOptionOne.setTitle(flashcard.extraAnswerOne, for: .normal)
+        btnOptionTwo.setTitle(flashcard.extraAnswerTwo, for: .normal)
+        btnOptionThree.setTitle(flashcard.extraAnswerThree, for: .normal)
         
         if isExisting {
             flashcards[currentIndex] = flashcard
