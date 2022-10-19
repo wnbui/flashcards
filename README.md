@@ -15,9 +15,9 @@ Create flashcards with single flip answers or multiple choice answers (between t
 - [x] User can re-open the app and see previously created flashcards
 - [x] Push code to GitHub
 ## Optional
-- [ ] User can delete a flashcard
-- [ ] User can edit existing flashcard
-- [ ] User can store multiple choice questions
+- [x] User can delete a flashcard
+- [x] User can edit existing flashcard
+- [] User can store multiple choice questions
 
 
 ## Lab 2

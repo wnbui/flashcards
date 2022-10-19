@@ -32,7 +32,6 @@ class CreationViewController: UIViewController {
     var initialQuestion: String?
     var initialAnswer: String?
     
-    
     @IBAction func didTapOnDone(_ sender: Any) {
         
         // Get the text in the question text field
@@ -55,10 +54,15 @@ class CreationViewController: UIViewController {
         }
         else
         {
+            // see if it's ecisting
+            var isExisting = false
+            if initialQuestion != nil {
+                isExisting = true
+            }
             // Call the function to update the flashcard
-            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!, extraAnswerOne: extraAnswerOneText!, extraAnswerTwo: extraAnswerTwoText!, extraAnswerThree: extraAnswerThreeText!)
-        
-            // Dismissa
+            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!, extraAnswerOne: extraAnswerOneText!, extraAnswerTwo: extraAnswerTwoText!, extraAnswerThree: extraAnswerThreeText!, isExisting: isExisting)
+            
+            // Dismiss
             dismiss(animated: true)
         }
     }

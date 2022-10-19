@@ -24,25 +24,31 @@ class ViewController: UIViewController {
     // Current flashcard index
     var currentIndex = 0
     
-    func updateFlashcard(question: String, answer: String, extraAnswerOne: String, extraAnswerTwo: String, extraAnswerThree: String) {
+    func updateFlashcard(question: String, answer: String, extraAnswerOne: String, extraAnswerTwo: String, extraAnswerThree: String, isExisting: Bool) {
         let flashcard = Flashcard(question: question, answer: answer, extraAnswerOne: extraAnswerOne, extraAnswerTwo: extraAnswerTwo, extraAnswerThree: extraAnswerThree)
         frontLabel.text = flashcard.question
         backLabel.text = flashcard.answer
         
-        btnOptionOne.setTitle(flashcard.extraAnswerOne, for: .normal)
-        btnOptionTwo.setTitle(flashcard.extraAnswerTwo, for: .normal)
-        btnOptionThree.setTitle(flashcard.extraAnswerThree, for: .normal)
+        btnOptionOne.setTitle(extraAnswerOne, for: .normal)
+        btnOptionTwo.setTitle(extraAnswerTwo, for: .normal)
+        btnOptionThree.setTitle(extraAnswerThree, for: .normal)
         
-        // Adding new flashcards
-        flashcards.append(flashcard)
-        
-        // Logging to the console
-        print("Added a new Flashcard , take a look -> ", flashcards)
-        print("We now have \(flashcards.count) flashcards")
-        
-        // Update current index
-        currentIndex = flashcards.count - 1
-        print("Our current index is \(currentIndex)")
+        if isExisting {
+            flashcards[currentIndex] = flashcard
+        }
+        else
+        {
+            // Adding new flashcards
+            flashcards.append(flashcard)
+            
+            // Logging to the console
+            print("Added a new Flashcard , take a look -> ", flashcards)
+            print("We now have \(flashcards.count) flashcards")
+            
+            // Update current index
+            currentIndex = flashcards.count - 1
+            print("Our current index is \(currentIndex)")
+        }
         
         // Update buttons
         updateNextPrevButtons()
@@ -113,7 +119,7 @@ class ViewController: UIViewController {
         
         // Adding our initial flashcard if needed
         if flashcards.count == 0 {
-            updateFlashcard(question: "What is the question?", answer: "This is the answer", extraAnswerOne: "one", extraAnswerTwo: "two", extraAnswerThree: "three")
+            updateFlashcard(question: "What is the question?", answer: "This is the answer", extraAnswerOne: "one", extraAnswerTwo: "two", extraAnswerThree: "three", isExisting: true)
         }
         else {
             updateLabels()
@@ -202,7 +208,6 @@ class ViewController: UIViewController {
         // Update buttons
         updateNextPrevButtons()
     }
-    
     @IBAction func didTapOnNext(_ sender: Any) {
         // Increase current index
         currentIndex = currentIndex + 1
@@ -213,6 +218,31 @@ class ViewController: UIViewController {
         // Update buttons
         updateNextPrevButtons()
     }
+    func deleteCurrentFlashcard(){
+        // Delete current flashcard
+        flashcards.remove(at: currentIndex)
+        
+        // Special case:  Check if last card was deleted
+        if currentIndex > flashcards.count - 1 {
+            currentIndex = flashcards.count - 1
+        }
+        
+        updateNextPrevButtons()
+        
+        updateLabels()
+        
+        saveAllFlashcardsToDisk()
+    }
     
+    @IBAction func didTapOnDelete(_ sender: Any) {
+        // Show confirmation
+        let alert = UIAlertController(title: "Delete flashcard", message: "Are you sure you want to delete it?", preferredStyle: .actionSheet)
+        present(alert, animated: true)
+        let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { action in self.deleteCurrentFlashcard()
+        }
+        alert.addAction(deleteAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        alert.addAction(cancelAction)
+    }
 }
-
