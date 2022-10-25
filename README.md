@@ -3,7 +3,7 @@
 ## Lab 4
 
 ### App Description
-`TODO://` Add app description
+Create, update and delete flashcards with randomized multiple choice answers. Create and save your cards for your studying needs.
 
 ### App Walk-though
 
