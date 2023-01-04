@@ -6,10 +6,7 @@
 Create, update and delete flashcards with randomized multiple choice answers. Create and save your cards for your studying needs.
 
 ### App Walk-though
-
 <img src="http://g.recordit.co/G1auSCZVa3.gif" width=200><br>
-
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
 
 - User should see the app icon 
 - User should see a splash screen
