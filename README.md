@@ -61,7 +61,6 @@ Select the answer from the three choices.
 
 <img src="http://g.recordit.co/EUg350IhLX.gif" width=200><br>
 
-## Required
 - Add a view for the front side of the flashcard to display the question
 - Add a view for the back side of the flashcard to display the answer
 - Build in logic to show the answer side when the card is tapped
